@@ -15,10 +15,12 @@ export default async function Blog() {
             <h1>Teams</h1>
 
             <ul className="posts">
-                <h3>Ukraine</h3>
+                <h3>
+                <Link href={`/teams/ukr`}>Ukraine</Link></h3>
             </ul>
             <ul className="posts">
-                <h3>Switzerland</h3>
+                <h3>
+                    <Link href={`/teams/SUI`}>Switzerland</Link></h3>
             </ul>
 
         </>

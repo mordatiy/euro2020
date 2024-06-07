@@ -23,7 +23,7 @@ export default async function Blog() {
                 ))}
             </ul>
 
-            <Link href="/blog/new" className="add-new">
+            <Link href="new" className="add-new">
                 Add new post
             </Link>
         </>

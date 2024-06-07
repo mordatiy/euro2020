@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllPosts, getPostById } from "@/services/posts";
 import { removePost } from "../actions";
 
-export const dynamicParams = false
+export const dynamicParams = false;
 
 type Props = {
   params: {
@@ -13,6 +13,7 @@ type Props = {
 
 export async function generateStaticParams() {
   const posts: any[] = await getAllPosts();
+
 
   return posts.map((post) => ({
     slug: post.id.toString(),
